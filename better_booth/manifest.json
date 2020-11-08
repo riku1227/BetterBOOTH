@@ -9,5 +9,13 @@
         "128": "icon_128.png"
     },
     "content_scripts": [
+        {
+            "matches": [
+                "https://accounts.booth.pm/library*"
+            ],
+            "css": [
+                "better_booth_library.css"
+            ]
+        }
     ]
 }

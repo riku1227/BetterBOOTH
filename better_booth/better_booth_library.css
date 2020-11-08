@@ -1,0 +1,42 @@
+.container {
+  width: 98% !important;
+}
+
+.l-library-show {
+  column-count: 3;
+  column-gap: 0px;
+}
+
+.sheet {
+  width: 85%;
+  margin: 4px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.l-library-show > .sheet + .sheet {
+  margin-top: 8px 4px !important;
+}
+
+.l-library-item-thumbnail {
+  width: 65%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.on-white-bg:after {
+  width: 0 !important;
+}
+
+.l-row {
+  justify-content: center;
+}
+
+.u-tpg-title3 {
+  padding: 0px 8px;
+}
+
+.item-card__shop-name-anchor {
+  padding: 2px 8px;
+}
