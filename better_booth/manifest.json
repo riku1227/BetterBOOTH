@@ -9,7 +9,11 @@
         "128": "icon_128.png"
     },
     "permissions": [
-        "tabs"
+        "tabs",
+        "storage"
+    ],
+    "web_accessible_resources": [
+        "library/better_booth_library.css"
     ],
     "content_scripts": [
         {
@@ -25,8 +29,8 @@
             "matches": [
                 "https://accounts.booth.pm/library*"
             ],
-            "css": [
-                "better_booth_library.css"
+            "js": [
+                "library/better_booth_library.js"
             ]
         }
     ],

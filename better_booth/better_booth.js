@@ -1,5 +1,3 @@
-var port = chrome.runtime.connect({name: "better_booth"});
-
 const DOM = {
     getByClass: function(className) {
         return document.getElementsByClassName(className);
@@ -53,8 +51,7 @@ const BOOTHDOM = {
 
 const BetterBOOTH = {
     openSettings: function() {
-        port.postMessage({msMessage: "open_settings"});
-
+        chrome.runtime.sendMessage({message: "open_settings"});
     }
 }
 
@@ -84,6 +81,6 @@ const initialDOM = function() {
     pullDownMenu.appendChild(betterBOOTHMenuGroup);
 }
 
-window.onload = function () {
+window.addEventListener("load", () => {
     initialDOM();
-}
+}, false);
